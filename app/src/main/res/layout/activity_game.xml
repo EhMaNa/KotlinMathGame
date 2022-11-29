@@ -67,4 +67,25 @@
             android:textColor="@color/white"
             android:textSize="17sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
 </LinearLayout>

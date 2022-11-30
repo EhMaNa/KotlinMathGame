@@ -10,23 +10,29 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAdd"
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginTop="50dp"
-        android:text="Button" />
+        android:text="@string/buttonAdd"
+        android:textSize="17sp"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSub"
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginTop="30dp"
-        android:text="Button" />
+        android:text="@string/buttonMulti"
+        android:textSize="17sp"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonMulti"
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginTop="30dp"
-        android:text="Button" />
+        android:text="@string/buttonSub"
+        android:textSize="17sp"
+        tools:ignore="TextContrastCheck" />
 </LinearLayout>

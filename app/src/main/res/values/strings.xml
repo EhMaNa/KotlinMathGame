@@ -6,4 +6,10 @@
     <string name="scoreText">Score</string>
     <string name="lifeText">Life</string>
     <string name="timeText"> Time </string>
+    <string name="buttonOk">ok</string>
+    <string name="buttonNxt">Next</string>
+    <string name="answerHint">Write your answer</string>
+    <string name="score">0</string>
+    <string name="life">5</string>
+    <string name="time">60</string>
 </resources>

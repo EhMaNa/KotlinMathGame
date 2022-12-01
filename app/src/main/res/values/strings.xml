@@ -12,4 +12,6 @@
     <string name="score">0</string>
     <string name="life">5</string>
     <string name="time">60</string>
+    <string name="success">Congratulations, your answer is correct</string>
+    <string name="fail">Sorry, your answer is wrong</string>
 </resources>

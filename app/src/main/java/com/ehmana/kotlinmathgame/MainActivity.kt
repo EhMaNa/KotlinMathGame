@@ -1,5 +1,6 @@
 package com.ehmana.kotlinmathgame
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ehmana.kotlinmathgame.databinding.ActivityMainBinding
@@ -16,7 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.buttonAdd.setOnClickListener {
+            var intent = Intent(this@MainActivity, GameActivity::class.java)
+                startActivity(intent)
+        }
 
     }
 }

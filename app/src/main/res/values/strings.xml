@@ -14,4 +14,5 @@
     <string name="time">60</string>
     <string name="success">Congratulations, your answer is correct</string>
     <string name="fail">Sorry, your answer is wrong</string>
+    <string name="timeUp">Sorry, Time is Up! </string>
 </resources>

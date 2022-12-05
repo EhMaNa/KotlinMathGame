@@ -2,8 +2,10 @@ package com.ehmana.kotlinmathgame
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.widget.Toast
 import com.ehmana.kotlinmathgame.databinding.ActivityGameBinding
+import java.util.*
 import kotlin.random.Random
 
 
@@ -13,6 +15,9 @@ class GameActivity : AppCompatActivity() {
     var correctAnswer = 0
     var userScore = 0
     var userLife = 5
+    lateinit var timer : CountDownTimer
+    var startTime : Long = 90000
+    var timeLeft : Long = startTime
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +29,7 @@ class GameActivity : AppCompatActivity() {
 
         binding.buttonOk.setOnClickListener {
             if (binding.answer.text.toString().isNotEmpty()){
+                pauseTime()
                 if (binding.answer.text.toString().toInt() == correctAnswer) {
                     userScore += 10
                     binding.questionText.setText(R.string.success)
@@ -43,15 +49,12 @@ class GameActivity : AppCompatActivity() {
         }
 
         binding.buttonNxt.setOnClickListener {
+            pauseTime()
+            resetTime()
             getQuestion()
             binding.answer.setText("")
             binding.buttonOk.isClickable = true
         }
-
-
-
-
-
     }
 
     fun getQuestion() {
@@ -59,5 +62,40 @@ class GameActivity : AppCompatActivity() {
         var number2 = Random.nextInt(10, 500)
         binding.questionText.text = "$number1 + $number2"
         correctAnswer = number1 + number2
+        time()
+    }
+
+    fun time () {
+        timer = object : CountDownTimer(timeLeft, 1000) {
+            override fun onTick(untilfinished: Long) {
+                timeLeft = untilfinished
+                updateText()
+
+            }
+
+            override fun onFinish() {
+
+                pauseTime()
+                resetTime()
+                updateText()
+
+
+                userLife--
+                binding.questionText.setText(R.string.timeUp)
+                binding.life.text = userLife.toString()
+            }
+
+        }.start()
+    }
+    fun updateText() {
+        val remainingTime = (timeLeft / 1000).toInt()
+        binding.time.text = String.format(Locale.getDefault(), "%02d", remainingTime)
+    }
+    fun pauseTime () {
+        timer.cancel()
+    }
+    fun resetTime () {
+        timeLeft = startTime
+        updateText()
     }
 }

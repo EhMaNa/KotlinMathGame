@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonAdd.setOnClickListener {
-            var intent = Intent(this@MainActivity, GameActivity::class.java)
+            val intent = Intent(this@MainActivity, GameActivity::class.java)
                 startActivity(intent)
         }
 

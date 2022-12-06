@@ -20,11 +20,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/scoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="TextView"
+        android:text="@string/result"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -36,21 +36,29 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonPlayAgain"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="Button"
-            android:textSize="22sp" />
+            android:backgroundTint="@color/ice_blue"
+            android:text="@string/playAgain"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonExit"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="Button"
-            android:textSize="22sp" />
+            android:backgroundTint="@color/ice_blue"
+            android:text="@string/exit"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 </LinearLayout>

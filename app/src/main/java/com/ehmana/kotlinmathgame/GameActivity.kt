@@ -1,5 +1,6 @@
 package com.ehmana.kotlinmathgame
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -11,7 +12,7 @@ import kotlin.random.Random
 
 class GameActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityGameBinding
+    private lateinit var binding : ActivityGameBinding
     var correctAnswer = 0
     var userScore = 0
     var userLife = 5
@@ -51,15 +52,26 @@ class GameActivity : AppCompatActivity() {
         binding.buttonNxt.setOnClickListener {
             pauseTime()
             resetTime()
-            getQuestion()
+
             binding.answer.setText("")
             binding.buttonOk.isClickable = true
+
+            if (userLife != 0){
+                getQuestion()
+            } else {
+                Toast.makeText(applicationContext,"Sorry Game Over", Toast.LENGTH_LONG).show()
+                val intent = Intent(this@GameActivity, ResultActivity::class.java)
+                intent.putExtra("score", userScore)
+                startActivity(intent)
+                finish()
+
+            }
         }
     }
 
     fun getQuestion() {
-        var number1 = Random.nextInt(10, 500)
-        var number2 = Random.nextInt(10, 500)
+        val number1 = Random.nextInt(10, 500)
+        val number2 = Random.nextInt(10, 500)
         binding.questionText.text = "$number1 + $number2"
         correctAnswer = number1 + number2
         time()

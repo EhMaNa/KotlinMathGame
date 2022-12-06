@@ -15,4 +15,10 @@
     <string name="success">Congratulations, your answer is correct</string>
     <string name="fail">Sorry, your answer is wrong</string>
     <string name="timeUp">Sorry, Time is Up! </string>
+    <string name="congrats">Congratulation</string>
+    <string name="result">Score: 0</string>
+    <string name="playAgain">Play Again</string>
+    <string name="exit">Exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

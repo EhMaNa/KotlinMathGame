@@ -16,10 +16,19 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var intent = Intent(this@MainActivity, GameActivity::class.java)
 
         binding.buttonAdd.setOnClickListener {
-            val intent = Intent(this@MainActivity, GameActivity::class.java)
-                startActivity(intent)
+            intent.putExtra("nav", "add")
+            startActivity(intent)
+        }
+        binding.buttonMulti.setOnClickListener {
+            intent.putExtra("nav", "multi")
+            startActivity(intent)
+        }
+        binding.buttonSub.setOnClickListener {
+            intent.putExtra("nav", "sub")
+            startActivity(intent)
         }
 
     }

@@ -26,6 +26,8 @@ class GameActivity : AppCompatActivity() {
 
         binding = ActivityGameBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val nav = intent.getStringExtra("nav")
+        navBar(nav!!)
         getQuestion()
 
         binding.buttonOk.setOnClickListener {
@@ -109,5 +111,14 @@ class GameActivity : AppCompatActivity() {
     fun resetTime () {
         timeLeft = startTime
         updateText()
+    }
+    fun navBar(nav: String) {
+        when (nav) {
+            "add" -> supportActionBar!!.setTitle(R.string.buttonAdd)
+            "sub" -> supportActionBar!!.setTitle( R.string.buttonSub)
+            "multi" -> supportActionBar!!.setTitle(R.string.buttonMulti)
+
+
+        }
     }
 }

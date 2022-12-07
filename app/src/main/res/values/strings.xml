@@ -19,6 +19,4 @@
     <string name="result">Score: 0</string>
     <string name="playAgain">Play Again</string>
     <string name="exit">Exit</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -17,7 +17,7 @@ class GameActivity : AppCompatActivity() {
     var userScore = 0
     var userLife = 5
     lateinit var timer : CountDownTimer
-    var startTime : Long = 90000
+    var startTime : Long = 60000
     var timeLeft : Long = startTime
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class GameActivity : AppCompatActivity() {
         setContentView(binding.root)
         val nav = intent.getStringExtra("nav")
         navBar(nav!!)
-        getQuestion()
+        getQuestion(nav)
 
         binding.buttonOk.setOnClickListener {
             if (binding.answer.text.toString().isNotEmpty()){
@@ -59,7 +59,7 @@ class GameActivity : AppCompatActivity() {
             binding.buttonOk.isClickable = true
 
             if (userLife != 0){
-                getQuestion()
+                getQuestion(nav)
             } else {
                 Toast.makeText(applicationContext,"Sorry Game Over", Toast.LENGTH_LONG).show()
                 val intent = Intent(this@GameActivity, ResultActivity::class.java)
@@ -71,12 +71,30 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-    fun getQuestion() {
-        val number1 = Random.nextInt(10, 500)
-        val number2 = Random.nextInt(10, 500)
-        binding.questionText.text = "$number1 + $number2"
-        correctAnswer = number1 + number2
-        time()
+    fun getQuestion(nav: String) {
+        when(nav) {
+               "add" -> {
+                   val number1 = Random.nextInt(10, 500)
+                   val number2 = Random.nextInt(10, 500)
+                   binding.questionText.text = "$number1 + $number2"
+                   correctAnswer = number1 + number2
+                   time()
+               }
+            "multi" -> {
+                val number1 = Random.nextInt(10, 500)
+                val number2 = Random.nextInt(10, 500)
+                binding.questionText.text = "$number1 x $number2"
+                correctAnswer = number1 * number2
+                time()
+            }
+            "sub" -> {
+                val number1 = Random.nextInt(500, 1000)
+                val number2 = Random.nextInt(100, 500)
+                binding.questionText.text = "$number1 - $number2"
+                correctAnswer = number1 - number2
+                time()
+            }
+        }
     }
 
     fun time () {

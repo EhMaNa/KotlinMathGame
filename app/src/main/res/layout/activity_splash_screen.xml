@@ -11,12 +11,17 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/splash_image" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/appName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 </LinearLayout>

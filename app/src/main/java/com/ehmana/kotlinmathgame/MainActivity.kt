@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        var intent = Intent(this@MainActivity, GameActivity::class.java)
+        val intent = Intent(this@MainActivity, GameActivity::class.java)
 
         binding.buttonAdd.setOnClickListener {
             intent.putExtra("nav", "add")

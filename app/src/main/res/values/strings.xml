@@ -6,17 +6,17 @@
     <string name="scoreText">Score</string>
     <string name="lifeText">Life</string>
     <string name="timeText"> Time </string>
-    <string name="buttonOk">ok</string>
+    <string name="buttonOk" translatable="false">ok</string>
     <string name="buttonNxt">Next</string>
     <string name="answerHint">Write your answer</string>
-    <string name="score">0</string>
-    <string name="life">5</string>
-    <string name="time">60</string>
+    <string name="score" translatable="false">0</string>
+    <string name="life" translatable="false">5</string>
+    <string name="time" translatable="false">60</string>
     <string name="success">Congratulations, your answer is correct</string>
     <string name="fail">Sorry, your answer is wrong</string>
     <string name="timeUp">Sorry, Time is Up! </string>
     <string name="congrats">Congratulation</string>
-    <string name="result">Score: 0</string>
+    <string name="result" translatable="false">Score: 0</string>
     <string name="playAgain">Play Again</string>
     <string name="exit">Exit</string>
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KotlinMathGame</string>
+    <string name="buttonAdd">Ajout</string>
+    <string name="buttonSub">Soustraction</string>
+    <string name="buttonMulti">Multiplication</string>
+    <string name="lifeText">Durée de vie</string>
+    <string name="scoreText">Score</string>
+    <string name="timeText">Temps</string>
+    <string name="congrats">Félicitation</string>
+    <string name="answerHint">Ecrivez votre réponse</string>
+    <string name="buttonNxt">Prochain</string>
+    <string name="playAgain">Rejouer</string>
+    <string name="exit">Sortir</string>
+    <string name="success">Félicitations, votre réponse est correcte</string>
+    <string name="fail">Désolé, votre réponse est fausse</string>
+    <string name="timeUp">Désolé, le temps est écoulé !</string>
+</resources>

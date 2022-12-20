@@ -71,7 +71,7 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-    fun getQuestion(nav: String) {
+    private fun getQuestion(nav: String) {
         when(nav) {
                "add" -> {
                    val number1 = Random.nextInt(10, 500)
@@ -130,7 +130,7 @@ class GameActivity : AppCompatActivity() {
         timeLeft = startTime
         updateText()
     }
-    fun navBar(nav: String) {
+    private fun navBar(nav: String) {
         when (nav) {
             "add" -> supportActionBar!!.setTitle(R.string.buttonAdd)
             "sub" -> supportActionBar!!.setTitle( R.string.buttonSub)

@@ -47,7 +47,7 @@ class GameActivity : AppCompatActivity() {
 
             } else {
                 Toast.makeText(applicationContext,
-                    "Please write an answer or click the next button", Toast.LENGTH_LONG).show()
+                    getString(R.string.info), Toast.LENGTH_LONG).show()
             }
         }
 
@@ -61,7 +61,7 @@ class GameActivity : AppCompatActivity() {
             if (userLife != 0){
                 getQuestion(nav)
             } else {
-                Toast.makeText(applicationContext,"Sorry Game Over", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext,getString(R.string.over), Toast.LENGTH_LONG).show()
                 val intent = Intent(this@GameActivity, ResultActivity::class.java)
                 intent.putExtra("score", userScore)
                 startActivity(intent)

@@ -19,4 +19,6 @@
     <string name="result" translatable="false">Score: 0</string>
     <string name="playAgain">Play Again</string>
     <string name="exit">Exit</string>
+    <string name="over">Sorry Game Over</string>
+    <string name="info">Please write an answer or click the next button</string>
 </resources>

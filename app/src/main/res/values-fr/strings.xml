@@ -15,4 +15,6 @@
     <string name="success">Félicitations, votre réponse est correcte</string>
     <string name="fail">Désolé, votre réponse est fausse</string>
     <string name="timeUp">Désolé, le temps est écoulé !</string>
+    <string name="over">Désolé jeu terminé</string>
+    <string name="info">Veuillez écrire une réponse ou cliquer sur le bouton suivant</string>
 </resources>

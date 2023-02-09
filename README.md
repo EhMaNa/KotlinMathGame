@@ -3,4 +3,4 @@
 
 ## Description
 This project is a simple math game aimed at kids and designed them in mind
-created with the kotlin progr
+This application is created with the kotlin programming language

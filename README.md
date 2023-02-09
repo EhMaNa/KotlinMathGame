@@ -1,2 +1,2 @@
 # KotlinMathGame
- Simple Math Game
+ Math Game - Android Application

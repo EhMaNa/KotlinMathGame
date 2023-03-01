@@ -3,6 +3,7 @@
     <string name="buttonAdd">Addition</string>
     <string name="buttonSub">Subtraction</string>
     <string name="buttonMulti">Multiplication</string>
+    <string name="buttonDiv">Multiplication</string>
     <string name="scoreText">Score</string>
     <string name="lifeText">Life</string>
     <string name="timeText"> Time </string>

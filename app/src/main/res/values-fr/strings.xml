@@ -17,4 +17,5 @@
     <string name="timeUp">Désolé, le temps est écoulé !</string>
     <string name="over">Désolé jeu terminé</string>
     <string name="info">Veuillez écrire une réponse ou cliquer sur le bouton suivant</string>
+    <string name="buttonDiv">Division</string>
 </resources>

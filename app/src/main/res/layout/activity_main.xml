@@ -35,4 +35,14 @@
         android:text="@string/buttonSub"
         android:textSize="17sp"
         tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/buttonSub"
+        android:textSize="17sp"
+        tools:ignore="TextContrastCheck" />
+
 </LinearLayout>

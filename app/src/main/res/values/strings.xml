@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">KotlinMathGame</string>
     <string name="buttonAdd">Addition</string>
-    string name="buttonDiv">Division</string>
     <string name="buttonSub">Subtraction</string>
     <string name="buttonMulti">Multiplication</string>
     <string name="scoreText">Score</string>

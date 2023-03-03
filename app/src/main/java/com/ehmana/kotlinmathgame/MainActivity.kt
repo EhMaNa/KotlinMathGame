@@ -31,5 +31,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.buttonDiv.setOnClickListener {
+            intent.putExtra("nav", "div")
+            startActivity(intent)
+        }
+
     }
 }

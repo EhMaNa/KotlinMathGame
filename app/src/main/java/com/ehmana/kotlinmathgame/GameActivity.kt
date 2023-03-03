@@ -135,6 +135,7 @@ class GameActivity : AppCompatActivity() {
             "add" -> supportActionBar!!.setTitle(R.string.buttonAdd)
             "sub" -> supportActionBar!!.setTitle( R.string.buttonSub)
             "multi" -> supportActionBar!!.setTitle(R.string.buttonMulti)
+            "div" -> supportActionBar!!.setTitle(R.string.buttonDiv)
 
 
         }

@@ -41,7 +41,7 @@
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginTop="30dp"
-        android:text="@string/buttonSub"
+        android:text="@string/buttonDiv"
         android:textSize="17sp"
         tools:ignore="TextContrastCheck" />
 

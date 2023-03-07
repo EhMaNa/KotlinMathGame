@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Toast
 import com.ehmana.kotlinmathgame.databinding.ActivityGameBinding
+import java.text.DecimalFormat
 import java.util.*
 import kotlin.random.Random
 
@@ -98,7 +99,8 @@ class GameActivity : AppCompatActivity() {
                 val number1 = Random.nextInt(500, 1000)
                 val number2 = Random.nextInt(100, 500)
                 binding.questionText.text = "$number1 ÷ $number2"
-                correctAnswer = number1 - number2
+                val decimalFormat = DecimalFormat("#.##").format(200)
+                correctAnswer = number1 / number2
                 time()
             }
         }

@@ -97,12 +97,13 @@ class GameActivity : AppCompatActivity() {
                 time()
             }
             "div" -> {
-                val number1 = Random.nextInt(500, 1000)
-                val number2 = Random.nextInt(100, 500)
+                val number1 = Random.nextInt(10, 100)
+                val number2 = Random.nextInt(5, 50)
                 binding.questionText.text = "$number1 ÷ $number2"
                 val decimalFormat = DecimalFormat("#.##")
                 decimalFormat.roundingMode = RoundingMode.DOWN
-                correctAnswer = number1 / number2
+                correctAnswer = decimalFormat.format(number1 / number2).toInt()
+                print(correctAnswer)
                 time()
             }
         }

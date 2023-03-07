@@ -97,7 +97,7 @@ class GameActivity : AppCompatActivity() {
             "div" -> {
                 val number1 = Random.nextInt(500, 1000)
                 val number2 = Random.nextInt(100, 500)
-                binding.questionText.text = "$number1 - $number2"
+                binding.questionText.text = "$number1 ÷ $number2"
                 correctAnswer = number1 - number2
                 time()
             }

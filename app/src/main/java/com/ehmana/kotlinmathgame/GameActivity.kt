@@ -103,8 +103,7 @@ class GameActivity : AppCompatActivity() {
                 binding.questionText.text = "$number1 ÷ $number2"
                 val decimalFormat = DecimalFormat("#.##")
                 decimalFormat.roundingMode = RoundingMode.DOWN
-                correctAnswer = decimalFormat.format(number1 / number2)
-                Log.d("TAG"," Here is the answer: $correctAnswer")
+                correctAnswer = decimalFormat.format(number1.toDouble() / number2)
                 time()
             }
         }

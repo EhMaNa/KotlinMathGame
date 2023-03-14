@@ -15,7 +15,7 @@ import kotlin.random.Random
 class GameActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityGameBinding
-    var correctAnswer = 0
+    var correctAnswer : Any = 0
     var userScore = 0
     var userLife = 5
     lateinit var timer : CountDownTimer
@@ -102,7 +102,7 @@ class GameActivity : AppCompatActivity() {
                 binding.questionText.text = "$number1 ÷ $number2"
                 val decimalFormat = DecimalFormat("#.##")
                 decimalFormat.roundingMode = RoundingMode.DOWN
-                correctAnswer = decimalFormat.format(number1 / number2).toInt()
+                correctAnswer = decimalFormat.format(number1 / number2)
                 print(correctAnswer)
                 time()
             }

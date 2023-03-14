@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import android.widget.Toast
 import com.ehmana.kotlinmathgame.databinding.ActivityGameBinding
 import java.math.RoundingMode
@@ -35,7 +36,7 @@ class GameActivity : AppCompatActivity() {
         binding.buttonOk.setOnClickListener {
             if (binding.answer.text.toString().isNotEmpty()){
                 pauseTime()
-                if (binding.answer.text.toString().toInt() == correctAnswer) {
+                if (binding.answer.text.toString() == correctAnswer.toString()) {
                     userScore += 10
                     binding.questionText.setText(R.string.success)
                     binding.score.text = userScore.toString()
@@ -103,7 +104,7 @@ class GameActivity : AppCompatActivity() {
                 val decimalFormat = DecimalFormat("#.##")
                 decimalFormat.roundingMode = RoundingMode.DOWN
                 correctAnswer = decimalFormat.format(number1 / number2)
-                print(correctAnswer)
+                Log.d("TAG"," Here is the answer: $correctAnswer")
                 time()
             }
         }

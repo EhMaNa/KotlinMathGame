@@ -21,8 +21,6 @@ class ResultActivity : AppCompatActivity() {
 
         binding.scoreText.text = "Your Score $score"
         binding.buttonPlayAgain.setOnClickListener {
-            //val intent = Intent(this@ResultActivity, MainActivity::class.java)
-            //startActivity(intent)
             finish()
         }
 

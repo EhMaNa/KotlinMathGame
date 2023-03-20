@@ -48,17 +48,5 @@
             android:textSize="22sp"
             tools:ignore="TextContrastCheck" />
 
-        <Button
-            android:id="@+id/buttonExit"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/ice_blue"
-            android:text="@string/exit"
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 </LinearLayout>

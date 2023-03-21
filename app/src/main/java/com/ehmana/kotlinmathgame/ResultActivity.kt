@@ -3,6 +3,7 @@ package com.ehmana.kotlinmathgame
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.ehmana.kotlinmathgame.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -24,11 +25,10 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.buttonExit.setOnClickListener{
-            val intent = Intent(Intent.ACTION_MAIN)
-            intent.addCategory(Intent.CATEGORY_HOME)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            startActivity(intent)
-        }
+
+
+
     }
+
+
 }

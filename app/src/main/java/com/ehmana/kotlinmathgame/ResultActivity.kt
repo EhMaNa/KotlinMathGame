@@ -1,5 +1,6 @@
 package com.ehmana.kotlinmathgame
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +11,11 @@ class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityResultBinding
 
-
+    override fun onBackPressed() {
+        super.onBackPressed()
+        var alert = AlertDialog.Builder(this)
+        alert.setTitle("Exit")
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
@@ -25,7 +30,12 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
 
-
+//        binding.buttonExit.setOnClickListener{
+//            val intent = Intent(Intent.ACTION_MAIN)
+//            intent.addCategory(Intent.CATEGORY_HOME)
+//            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+//            startActivity(intent)
+//        }
 
 
     }

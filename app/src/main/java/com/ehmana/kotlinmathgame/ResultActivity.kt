@@ -15,6 +15,8 @@ class ResultActivity : AppCompatActivity() {
         super.onBackPressed()
         var alert = AlertDialog.Builder(this)
         alert.setTitle("Exit")
+        alert.setMessage("Do you want to exit this game")
+        alert.setCancelable(false)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

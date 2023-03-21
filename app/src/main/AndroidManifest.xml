@@ -37,6 +37,7 @@
             android:name=".GameActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.GameScreen">
             <meta-data
                 android:name="android.app.lib_name"

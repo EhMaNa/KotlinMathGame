@@ -18,7 +18,9 @@ class ResultActivity : AppCompatActivity() {
         alert.setMessage("Do you want to exit this game")
         alert.setCancelable(false)
         alert.setNegativeButton("Exit") { dialog, i ->
-            dialog.cancel()
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.addCategory(Intent.CATEGORY_HOME)
+
         }
     }
     override fun onCreate(savedInstanceState: Bundle?) {

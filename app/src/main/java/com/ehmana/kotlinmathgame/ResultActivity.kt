@@ -17,6 +17,9 @@ class ResultActivity : AppCompatActivity() {
         alert.setTitle("Exit")
         alert.setMessage("Do you want to exit this game")
         alert.setCancelable(false)
+        alert.setNegativeButton("Exit") { dialog, i ->
+            dialog.cancel()
+        }
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

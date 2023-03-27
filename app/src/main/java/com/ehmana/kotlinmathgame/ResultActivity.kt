@@ -17,12 +17,14 @@ class ResultActivity : AppCompatActivity() {
         alert.setTitle("Exit Game")
         alert.setMessage("Do you want to exit this game")
         alert.setCancelable(false)
-        alert.setNegativeButton("Exit") { dialog, i ->
+        alert.setNegativeButton("EXIT") { dialog, i ->
             val intent = Intent(Intent.ACTION_MAIN)
             intent.addCategory(Intent.CATEGORY_HOME)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
 
+        }
+        alert.setPositiveButton("PLAY AGAIN") { dialog, i ->
         }
     }
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -14,7 +14,7 @@ class ResultActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         var alert = AlertDialog.Builder(this)
-        alert.setTitle("Exit")
+        alert.setTitle("Exit Game")
         alert.setMessage("Do you want to exit this game")
         alert.setCancelable(false)
         alert.setNegativeButton("Exit") { dialog, i ->

@@ -44,8 +44,7 @@ class ResultActivity : AppCompatActivity() {
 
 //        binding.buttonExit.setOnClickListener{
 //            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-//            startActivity(intent)
-//        }
+
 
 
     }

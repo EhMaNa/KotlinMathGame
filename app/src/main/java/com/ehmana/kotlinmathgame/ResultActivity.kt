@@ -13,7 +13,6 @@ class ResultActivity : AppCompatActivity() {
     private lateinit var binding : ActivityResultBinding
 
     override fun onBackPressed() {
-        super.onBackPressed()
         var alert = AlertDialog.Builder(this)
         alert.setTitle("Exit Game")
         alert.setMessage("Do you want to exit this game")

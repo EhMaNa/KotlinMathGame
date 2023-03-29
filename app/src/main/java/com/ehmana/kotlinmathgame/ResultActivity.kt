@@ -41,12 +41,6 @@ class ResultActivity : AppCompatActivity() {
         binding.buttonPlayAgain.setOnClickListener {
             finish()
         }
-
-//        binding.buttonExit.setOnClickListener{
-//            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-
-
-
     }
 
 

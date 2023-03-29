@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.ehmana.kotlinmathgame.databinding.ActivityResultBinding
 
+
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityResultBinding
@@ -26,6 +27,7 @@ class ResultActivity : AppCompatActivity() {
         }
         alert.setPositiveButton("PLAY AGAIN") { dialog, i ->
         }
+        alert.create().show()
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

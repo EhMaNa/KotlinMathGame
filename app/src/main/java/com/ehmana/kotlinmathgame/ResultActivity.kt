@@ -37,7 +37,7 @@ class ResultActivity : AppCompatActivity() {
         val score = intent.getIntExtra("score", 0)
 
 
-        binding.scoreText.text = "Your Score $score"
+        binding.scoreText.text = "Your Score: $score"
         binding.buttonPlayAgain.setOnClickListener {
             finish()
         }
